@@ -1,0 +1,65 @@
+
+Type: Application
+Name: fc-qwen
+Provider:
+  - 阿里云
+Version: 0.0.3
+Description: 部署通义千问客户端
+HomePage: 项目首页地址
+Tags: #标签详情
+  - 部署函数
+Category: Web框架
+Parameters:
+  type: object
+  additionalProperties: false # 不允许增加其他属性
+  required: # 必填项
+    - region
+    - apiKey
+  properties:
+    region:
+      title: 地域
+      type: string
+      default: cn-beijing
+      description: 创建应用所在的地区
+      enum:
+        - cn-beijing
+    apiKey:
+      title: 通义千问API-KEY
+      type: string
+      default: ""
+      description: 访问通义千问所需的KEY
+    model:
+      title: 通义千问模型
+      type: string
+      default: qwen-turbo
+      description: 选择千问模型
+      enum:
+        - qwen-turbo
+        - qwen-plus
+    clientPassword:
+      title: 客户端的访问密码
+      type: password
+      default: 'fc-qwen'
+      description: 访问聊天客户端需要的密码默认是fc-qwen,您可以自行设置
+    serviceName:
+      title: 服务名
+      type: string
+      default: fc-qwen
+      pattern: "^[a-zA-Z_][a-zA-Z0-9-_:/.]{0,127}$"
+      description: 您可以根据需要设置不同的服务名，同一个服务会共享部分第三方云产品资源
+    roleArn:
+      title: RAM 角色 ARN
+      type: string
+      default: ''
+      pattern: '^acs:ram::[0-9]*:role/.*$'
+      description: |
+        函数计算访问云服务时使用的服务角色，需要填写具体的角色ARN，格式为acs:ram::$account-id>:role/$role-name。例如：acs:ram::14310000000:role/aliyunfcdefaultrole。
+        如果您没有特殊要求，可以使用函数计算提供的默认的服务角色，即AliyunFCDefaultRole, 并增加 AliyunFCFullAccess 权限。如果您首次使用函数计算，可以访问 https://fcnext.console.aliyun.com 进行授权。
+        详细文档参考 https://help.aliyun.com/document_detail/181589.html#section-o93-dbr-z6o"
+      required: true
+      x-role:
+        name: fcdeployrole
+        service: fc
+        authorities:
+          - AliyunFCDefaultRolePolicy
+          - AliyunFCFullAccess

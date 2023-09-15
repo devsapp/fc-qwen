@@ -1,0 +1,107 @@
+edition: 1.0.0
+name: fc-qwen
+vars:
+  region: '{{ region }}'
+  apiKey: '{{ apiKey }}'
+  model: '{{ model }}' # 千问模型
+  service:
+    name: '{{ serviceName }}'
+    description: '通义千问客户端部署到函数计算'
+    {{ if roleArn !== '' && roleArn !== undefined }}role: "{{roleArn}}"{{/if}}
+    internetAccess: true
+services:
+  proxy:  #容器服务
+    component: fc
+    props:
+      region: ${vars.region}
+      service: ${vars.service}
+      function:
+        name: proxy
+        description: 通义千问代理服务
+        handler: index.handler
+        timeout: 600
+        diskSize: 1024
+        caPort: 8000
+        instanceType: c1
+        runtime: custom-container
+        cpu: 1
+        customContainerConfig:
+          args: ''
+          accelerationType: Default
+          image: 'registry.${vars.region}.aliyuncs.com/sd_api_public/fc-qwen-proxy:v1'
+          accelerationInfo:
+            status: Preparing
+          command: ''
+          webServerMode: true
+        instanceConcurrency: 100
+        memorySize: 1024
+        environmentVariables:
+          DASHSCOPE_API_KEY: ${vars.apiKey}
+          MODEL_NAME: ${vars.model}
+        asyncConfiguration: {}
+      triggers:
+        - name: defaultTrigger
+          description: ''
+          type: http
+          qualifier: LATEST
+          config:
+            methods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+            authType: anonymous
+            disableURLInternet: false
+      customDomains:
+        - domainName: auto
+          protocol: HTTP
+          routeConfigs:
+            - path: /*
+  client:
+    component: fc
+    actions:
+       pre-deploy:
+        - run: npm i
+          path: ./code/client
+    props:
+      region: ${vars.region}
+      service: ${vars.service}
+      function:
+        name: client
+        description: 函数计算大模型服务客户端
+        timeout: 3000
+        layers:
+          - acs:fc:cn-hangzhou:official:layers/Nodejs18/versions/1
+        instanceType: c1
+        runtime: custom.debian10
+        instanceConcurrency: 5
+        memorySize: 3072
+        cpu: 2.0
+        diskSize: 512
+        environmentVariables:
+          NODE_PATH: /opt/nodejs/node_modules
+          PATH: >-
+            /opt/nodejs18/bin::/usr/local/bin/apache-maven/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/ruby/bin:/opt/bin:/code:/code/bin
+          BASE_URL: '${proxy.output.url.system_intranet_url}' # 接入chat server 内部网络
+          CODE: '{{ clientPassword }}'
+        codeUri: ./code/client
+        caPort: 3000
+      triggers:
+        - name: defaultTrigger
+          type: http
+          config:
+            authType: anonymous
+            methods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - HEAD
+              - OPTIONS
+      customDomains:
+        - domainName: auto
+          protocol: HTTP
+          routeConfigs:
+            - path: /*
+  
+ 
