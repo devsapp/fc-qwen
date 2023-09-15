@@ -20,7 +20,7 @@ services:
         description: 通义千问代理服务
         handler: index.handler
         timeout: 600
-        diskSize: 1024
+        diskSize: 512
         caPort: 8000
         instanceType: c1
         runtime: custom-container
