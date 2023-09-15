@@ -9,7 +9,7 @@ from schema import *
 
 gen = Generation()
 model = os.getenv("MODEL_NAME") or Generation.Models.qwen_v1
-max_tokens = int(os.getenv("MAX_TOKENS") or "1501")
+max_tokens = int(os.getenv("MAX_TOKENS") or "1500")
 
 def stream_chat(messages:list, max_length:int):
     '''
@@ -31,9 +31,7 @@ def generate(resps:Generator[GenerationResponse, None, None], created:int):
     '''
     cur_msg = ""
     request_id = ""
-    print(resps)
     for resp in resps:
-        print(resp)
         cur_msg, resp_json = to_stream_response(resp, created, cur_msg)
         request_id = resp.request_id
         yield resp_json
