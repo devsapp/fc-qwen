@@ -6,6 +6,7 @@ import { IconButton } from "./button";
 import SettingsIcon from "../icons/settings.svg";
 import GithubIcon from "../icons/github.svg";
 import ChatGptIcon from "../icons/chatgpt.svg";
+import QwenIcon from "../icons/qwen.svg";
 import AddIcon from "../icons/add.svg";
 import CloseIcon from "../icons/close.svg";
 import MaskIcon from "../icons/mask.svg";
@@ -118,13 +119,15 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
-          函数计算 LLM服务
+          函数计算X通义千问
         </div>
         <div className={styles["sidebar-sub-title"]}>
-          Build your own AI assistant.
+          个人AI小助手
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
-          <ChatGptIcon />
+          {/* <ChatGptIcon /> */}
+          <img src="https://img.alicdn.com/imgextra/i4/O1CN01fbqryd1ZossCmdlga_!!6000000003242-54-tps-200-200.apng" style={{width:38,height:38}} alt="" />
+          {/* <QwenIcon style={{width:38,height:38}}/> */}
         </div>
       </div>
 

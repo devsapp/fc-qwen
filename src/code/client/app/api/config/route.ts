@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-
+import type { NextApiRequest } from 'next'
 import { getServerSideConfig } from "../../config/server";
-
+import { DEFAULT_WATER_MASK } from '../../constant'
 const serverConfig = getServerSideConfig();
 
 // Danger! Don not write any secret value here!
@@ -17,8 +17,11 @@ declare global {
   type DangerConfig = typeof DANGER_CONFIG;
 }
 
-async function handle() {
-  return NextResponse.json(DANGER_CONFIG);
+function handle(req: NextApiRequest) {
+
+  const { headers } = req;
+  const uid: any = headers['x-fc-account-id'] || '\n';
+  return NextResponse.json(Object.assign({}, DANGER_CONFIG, { uid }));
 }
 
 export const GET = handle;

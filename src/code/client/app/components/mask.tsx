@@ -59,11 +59,12 @@ function reorder<T>(list: T[], startIndex: number, endIndex: number): T[] {
 }
 
 export function MaskAvatar(props: { mask: Mask }) {
-  return props.mask.avatar !== DEFAULT_MASK_AVATAR ? (
-    <Avatar avatar={props.mask.avatar} />
-  ) : (
-    <Avatar model={props.mask.modelConfig.model} />
-  );
+  return <div><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AAAApVBMVEVHcExWUtVVUdNYVNlbVuBVUdFRTchRTclnZOxcWtVOS8NgX9xST8xQTcZgXOhpZ+9OS8FKR7hfWulkYO5nZu9ra/BydPJ0d/JHRbNAPqFucPBwcvJFQqw+PJ0/PZ89PJxJRrdydvI4N5A5OJM4N5BoZu40M4c1NIgxMYBxdPIzM4UuLXlFQ61wcvFvcPFoZ+5ZVdt3ffNCQKZWUtR0efJkYO5fW+iITaL7AAAAN3RSTlMA1P/+/3+Tw3cJ/xj/VsJ+M9r//////+L2Jv1ibbFS//+d/oM6MP/m/7nC//9P1IlB/v+vxOGqDQb20wAAAXZJREFUeAF10gWOwzAARNG/ZcdlZmbm+x9tx3Gr8pMimomZJ3+RaCz2x0/xRNI1UvxgAmzaNQzfJTOQcI1sKudZnuULgElH1CgWS6VypVKt8azeABJBOIkrlCvNaouHdgewQZBOPw1RJdTtSA8p9IPHEBUNMUDMcDQejxtI3pvctWpIZzrjh9oEaEzn8xFftRbIcj5fzQ1fmKZBZvPVarXE6XYzNwanaZGxCvP5GOms+34bWUKbLbc55rd13gsGb7tB7FSGbaStgk4qjlj3VXFGw+lw2MMphAPglCfAYIczVN7rIHlX2CO78hY5GKTbk2MDOaXTScTqqFvAZoGj+Hgs4O/bIll3m2c5ICPF63U/498dsvd3VT0c3DB27fT7fRyDXO4Ff1t9pQVpc5Py70UDTJCEfq7zxLi8sl0szilCQRBkeHINJ+AhEyR5MgkH2PDk7+/kXZFLOAE8299cd9ByedPyXckS5gN+2GR3Lq/y0yLMn1b4Dxi5LEF44/cgAAAAAElFTkSuQmCC" style={{height: 24,width:24}} alt="" data-atf="1" data-frt="0" /></div>
+  // return props.mask.avatar !== DEFAULT_MASK_AVATAR ? (
+  //   <Avatar avatar={props.mask.avatar} />
+  // ) : (
+  //   <Avatar model={props.mask.modelConfig.model} />
+  // );
 }
 
 export function MaskConfig(props: {

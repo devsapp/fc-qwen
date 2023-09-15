@@ -472,10 +472,15 @@
     }
   }
 }
-
+.chat-disclaimer {
+  font-size: 12px;
+  margin-bottom: 15px;
+  text-align: center;
+}
 .chat-input-panel-inner {
   display: flex;
   flex: 1;
+  
 }
 
 .chat-input {
