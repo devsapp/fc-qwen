@@ -3,7 +3,8 @@
 require("../polyfill");
 
 import { useState, useEffect } from "react";
-
+//@ts-ignore
+import Watermark from 'watermark-plus';
 import styles from "./home.module.scss";
 
 import BotIcon from "../icons/bot.svg";
@@ -12,7 +13,7 @@ import LoadingIcon from "../icons/three-dots.svg";
 import { getCSSVar, useMobileScreen } from "../utils";
 
 import dynamic from "next/dynamic";
-import { Path, SlotID } from "../constant";
+import { Path, SlotID, DEFAULT_WATER_MASK } from "../constant";
 import { ErrorBoundary } from "./error";
 
 import { getISOLang, getLang } from "../locales";
@@ -119,6 +120,9 @@ const loadAsyncGoogleFont = () => {
   document.head.appendChild(linkEl);
 };
 
+
+
+
 function Screen() {
   const config = useAppConfig();
   const location = useLocation();
@@ -134,10 +138,9 @@ function Screen() {
     <div
       className={
         styles.container +
-        ` ${
-          config.tightBorder && !isMobileScreen
-            ? styles["tight-container"]
-            : styles.container
+        ` ${config.tightBorder && !isMobileScreen
+          ? styles["tight-container"]
+          : styles.container
         } ${getLang() === "ar" ? styles["rtl-screen"] : ""}`
       }
     >
@@ -185,8 +188,24 @@ export function Home() {
     console.log("[Config] got config from build time", getClientConfig());
     useAccessStore.getState().fetch();
   }, []);
+  const uid = useAccessStore.getState().uid;
+  useEffect(
+    () => {
+      const watermark = new Watermark({
+        // 传参
+        content: uid,
+        tip: DEFAULT_WATER_MASK
+      });
+
+      // 创建水印
+      watermark.create();
+      return () => watermark.destroy();
+    },
+    [uid]
+  )
 
   if (!useHasHydrated()) {
+
     return <Loading />;
   }
 

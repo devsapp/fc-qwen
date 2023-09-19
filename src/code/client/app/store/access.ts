@@ -3,6 +3,7 @@ import { persist } from "zustand/middleware";
 import { DEFAULT_API_HOST, DEFAULT_MODELS, StoreKey } from "../constant";
 import { getHeaders } from "../client/api";
 import { BOT_HELLO } from "./chat";
+
 import { getClientConfig } from "../config/client";
 
 export interface AccessControlStore {
@@ -13,9 +14,8 @@ export interface AccessControlStore {
   hideUserApiKey: boolean;
   hideBalanceQuery: boolean;
   disableGPT4: boolean;
-
+  uid: string,
   openaiUrl: string;
-
   updateToken: (_: string) => void;
   updateCode: (_: string) => void;
   updateOpenAiUrl: (_: string) => void;
@@ -39,7 +39,7 @@ export const useAccessStore = create<AccessControlStore>()(
       hideUserApiKey: false,
       hideBalanceQuery: false,
       disableGPT4: false,
-
+      uid: '',
       openaiUrl: DEFAULT_OPENAI_URL,
 
       enabledAccessControl() {

@@ -1259,8 +1259,11 @@ function _Chat() {
             onClick={() => doSubmit(userInput)}
           />
         </div>
+        
       </div>
-
+      <div className={styles["chat-disclaimer"]} >
+         服务生成的内容均由人工智能模型生成，其生成内容的准确性和完整性无法保证，不代表我们的态度或者观点 
+        </div>
       {showExport && (
         <ExportMessageModal onClose={() => setShowExport(false)} />
       )}

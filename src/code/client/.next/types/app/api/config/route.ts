@@ -1,4 +1,4 @@
-// File: /Users/hanxie/localproject/s-app/fc-llm-llama2-test/code/llm-client/app/api/config/route.ts
+// File: /Users/hanxie/opensource/devsapp/fc-qwen/src/code/client/app/api/config/route.ts
 import * as entry from '../../../../../app/api/config/route.js'
 import type { NextRequest } from 'next/server.js'
 
