@@ -47,7 +47,6 @@ export const useSyncStore = create<SyncStore>()(
             method: "PROFIND",
             headers: this.headers(),
           });
-          console.log(res);
           return res.status === 207;
         } catch (e) {
           console.error("[Sync] ", e);
