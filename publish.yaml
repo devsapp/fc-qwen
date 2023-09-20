@@ -23,6 +23,9 @@ Parameters:
       description: 创建应用所在的地区
       enum:
         - cn-beijing
+        - cn-hangzhou
+        - cn-shanghai
+        - cn-shenzhen
     apiKey:
       title: 通义千问API-KEY
       type: string
