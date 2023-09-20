@@ -8,7 +8,6 @@ vars:
   service:
     name: '{{ serviceName }}'
     description: '通义千问客户端部署到函数计算'
-    {{ if roleArn !== '' && roleArn !== undefined }}role: "{{roleArn}}"{{/if}}
     internetAccess: true
 services:
   proxy:  #容器服务
