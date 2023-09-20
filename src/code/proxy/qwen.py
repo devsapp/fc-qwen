@@ -110,6 +110,8 @@ def to_qwen_message(messages:list[ChatCompletionMessage]):
         if content == "":
             continue
         if pre_role == "" or role != pre_role:
+            if role == "system" and len(msg) >= 1:
+                continue
             msg.append({"role" : message.role, "content" : content})
             pre_role = role
         else:
