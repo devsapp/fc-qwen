@@ -3,7 +3,7 @@ Type: Application
 Name: fc-qwen
 Provider:
   - 阿里云
-Version: 0.0.3
+Version: dev
 Description: 部署通义千问客户端
 HomePage: 项目首页地址
 Tags: #标签详情

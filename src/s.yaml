@@ -4,6 +4,7 @@ vars:
   region: '{{ region }}'
   apiKey: '{{ apiKey }}'
   model: '{{ model }}' # 千问模型
+  code: '{{ clientPassword }}'
   service:
     name: '{{ serviceName }}'
     description: '通义千问客户端部署到函数计算'
@@ -23,22 +24,21 @@ services:
         diskSize: 512
         caPort: 8000
         instanceType: c1
-        runtime: custom-container
+        runtime: custom.debian10
         cpu: 1
-        customContainerConfig:
-          args: ''
-          accelerationType: Default
-          image: 'registry.${vars.region}.aliyuncs.com/sd_api_public/fc-qwen-proxy:v1'
-          accelerationInfo:
-            status: Preparing
-          command: ''
-          webServerMode: true
         instanceConcurrency: 100
         memorySize: 1024
+        layers:
+          - acs:fc:${vars.region}:official:layers/Python310/versions/2
+          - acs:fc:${vars.region}:official:layers/Python310-Package-Collection/versions/2
+          - acs:fc:${vars.region}:official:layers/Python3-Flask2x/versions/2
         environmentVariables:
           DASHSCOPE_API_KEY: ${vars.apiKey}
           MODEL_NAME: ${vars.model}
-        asyncConfiguration: {}
+          PYTHONPATH: /opt/python:/code:/code/python
+          LD_LIBRARY_PATH: /code:/code/lib:/usr/local/lib:/opt/lib:/opt/php8.1/lib:/opt/php8.0/lib:/opt/php7.2/lib
+          PATH: /opt/python3.10/bin:/usr/local/bin/apache-maven/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/ruby/bin:/opt/bin:/code:/code/bin
+        codeUri: ./code/proxy
       triggers:
         - name: defaultTrigger
           description: ''
@@ -71,19 +71,19 @@ services:
         description: 函数计算大模型服务客户端
         timeout: 3000
         layers:
-          - acs:fc:cn-hangzhou:official:layers/Nodejs18/versions/1
+          - acs:fc:${vars.region}:official:layers/Nodejs18/versions/1
         instanceType: c1
         runtime: custom.debian10
         instanceConcurrency: 5
         memorySize: 3072
+        diskSize: 10240
         cpu: 2.0
-        diskSize: 512
         environmentVariables:
           NODE_PATH: /opt/nodejs/node_modules
           PATH: >-
             /opt/nodejs18/bin::/usr/local/bin/apache-maven/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/ruby/bin:/opt/bin:/code:/code/bin
           BASE_URL: '${proxy.output.url.system_intranet_url}' # 接入chat server 内部网络
-          CODE: '{{ clientPassword }}'
+          CODE: ${vars.code}
         codeUri: ./code/client
         caPort: 3000
       triggers:

@@ -107,6 +107,8 @@ def to_qwen_message(messages:list[ChatCompletionMessage]):
     for message in messages:
         role = message.role
         content = message.content
+        if content == "":
+            continue
         if pre_role == "" or role != pre_role:
             msg.append({"role" : message.role, "content" : content})
             pre_role = role
