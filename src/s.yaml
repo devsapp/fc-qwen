@@ -10,7 +10,7 @@ vars:
     description: '通义千问客户端部署到函数计算'
     internetAccess: true
 services:
-  proxy:  #容器服务
+  client:
     component: fc
     props:
       region: ${vars.region}
@@ -56,7 +56,7 @@ services:
           protocol: HTTP
           routeConfigs:
             - path: /*
-  client:
+  proxy:
     component: fc
     actions:
        pre-deploy:
@@ -81,7 +81,7 @@ services:
           NODE_PATH: /opt/nodejs/node_modules
           PATH: >-
             /opt/nodejs18/bin::/usr/local/bin/apache-maven/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/ruby/bin:/opt/bin:/code:/code/bin
-          BASE_URL: '${proxy.output.url.system_intranet_url}' # 接入chat server 内部网络
+          BASE_URL: '${client.output.url.system_intranet_url}' # 接入chat server 内部网络
           CODE: ${vars.code}
         codeUri: ./code/client
         caPort: 3000
