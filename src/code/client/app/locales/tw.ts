@@ -123,7 +123,7 @@ const tw: PartialLocaleType = {
     Token: {
       Title: "API Key",
       SubTitle: "使用自己的 Key 可規避授權存取限制",
-      Placeholder: "OpenAI API Key",
+      Placeholder: "Qwen API Key",
     },
     Usage: {
       Title: "帳戶餘額",

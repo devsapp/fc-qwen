@@ -39,7 +39,7 @@ export const useAccessStore = create<AccessControlStore>()(
       hideUserApiKey: false,
       hideBalanceQuery: false,
       disableGPT4: false,
-      uid: '',
+      uid: '\n',
       openaiUrl: DEFAULT_OPENAI_URL,
 
       enabledAccessControl() {

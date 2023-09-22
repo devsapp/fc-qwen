@@ -99,7 +99,6 @@ const useSyncStore = (0,esm/* create */.Ue)()((0,middleware/* persist */.tJ)((se
                     method: "PROFIND",
                     headers: this.headers()
                 });
-                console.log(res);
                 return res.status === 207;
             } catch (e) {
                 console.error("[Sync] ", e);
@@ -650,31 +649,19 @@ function Settings() {
                             })
                         ]
                     }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(ui_lib/* List */.aV, {
-                        children: [
-                            showAccessCode ? /*#__PURE__*/ jsx_runtime_.jsx(ui_lib/* ListItem */.HC, {
-                                title: locales/* default */.ZP.Settings.AccessCode.Title,
-                                subTitle: locales/* default */.ZP.Settings.AccessCode.SubTitle,
-                                children: /*#__PURE__*/ jsx_runtime_.jsx(ui_lib/* PasswordInput */.WU, {
-                                    value: accessStore.accessCode,
-                                    type: "text",
-                                    placeholder: locales/* default */.ZP.Settings.AccessCode.Placeholder,
-                                    onChange: (e)=>{
-                                        accessStore.updateCode(e.currentTarget.value);
-                                    }
-                                })
-                            }) : /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {}),
-                            /*#__PURE__*/ jsx_runtime_.jsx(ui_lib/* ListItem */.HC, {
-                                title: locales/* default */.ZP.Settings.CustomModel.Title,
-                                subTitle: locales/* default */.ZP.Settings.CustomModel.SubTitle,
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("input", {
-                                    type: "text",
-                                    value: config.customModels,
-                                    placeholder: "chatglm2-6b,qwen,llama2",
-                                    onChange: (e)=>config.update((config)=>config.customModels = e.currentTarget.value)
-                                })
+                    /*#__PURE__*/ jsx_runtime_.jsx(ui_lib/* List */.aV, {
+                        children: showAccessCode ? /*#__PURE__*/ jsx_runtime_.jsx(ui_lib/* ListItem */.HC, {
+                            title: locales/* default */.ZP.Settings.AccessCode.Title,
+                            subTitle: locales/* default */.ZP.Settings.AccessCode.SubTitle,
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(ui_lib/* PasswordInput */.WU, {
+                                value: accessStore.accessCode,
+                                type: "text",
+                                placeholder: locales/* default */.ZP.Settings.AccessCode.Placeholder,
+                                onChange: (e)=>{
+                                    accessStore.updateCode(e.currentTarget.value);
+                                }
                             })
-                        ]
+                        }) : /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {})
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx(SyncItems, {}),
                     /*#__PURE__*/ jsx_runtime_.jsx(ui_lib/* List */.aV, {

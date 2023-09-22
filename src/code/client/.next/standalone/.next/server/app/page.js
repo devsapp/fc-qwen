@@ -3022,47 +3022,11 @@ const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
 const DEFAULT_SYSTEM_TEMPLATE = ``;
 const DEFAULT_MODELS = [
     {
-        name: "gpt-4",
+        name: "qwen-turbo",
         available: true
     },
     {
-        name: "gpt-4-0314",
-        available: true
-    },
-    {
-        name: "gpt-4-0613",
-        available: true
-    },
-    {
-        name: "gpt-4-32k",
-        available: true
-    },
-    {
-        name: "gpt-4-32k-0314",
-        available: true
-    },
-    {
-        name: "gpt-4-32k-0613",
-        available: true
-    },
-    {
-        name: "gpt-3.5-turbo",
-        available: true
-    },
-    {
-        name: "gpt-3.5-turbo-0301",
-        available: true
-    },
-    {
-        name: "gpt-3.5-turbo-0613",
-        available: true
-    },
-    {
-        name: "gpt-3.5-turbo-16k",
-        available: true
-    },
-    {
-        name: "gpt-3.5-turbo-16k-0613",
+        name: "qwen-plus",
         available: true
     }
 ];
@@ -3304,7 +3268,7 @@ const cn = {
         Token: {
             Title: "API Key",
             SubTitle: "使用自己的 Key 可绕过密码访问限制",
-            Placeholder: "OpenAI API Key"
+            Placeholder: "Qwen API Key"
         },
         Usage: {
             Title: "余额查询",
@@ -3451,7 +3415,7 @@ const en_isApp = !!(0,client/* getClientConfig */.Z)()?.isApp;
 const en = {
     WIP: "Coming Soon...",
     Error: {
-        Unauthorized: en_isApp ? "Invalid API Key, please check it in [Settings](/#/settings) page." : "Unauthorized access, please enter access code in [auth](/#/auth) page, or enter your OpenAI API Key."
+        Unauthorized: en_isApp ? "Invalid API Key, please check it in [Settings](/#/settings) page." : "Unauthorized access, please enter access code in [auth](/#/auth) page, or enter your Qwen API Key."
     },
     Auth: {
         Title: "Need Access Code",
@@ -3657,7 +3621,7 @@ const en = {
         Token: {
             Title: "API Key",
             SubTitle: "Use your key to ignore access code limit",
-            Placeholder: "OpenAI API Key"
+            Placeholder: "Qwen API Key"
         },
         Usage: {
             Title: "Account Balance",
@@ -3918,7 +3882,7 @@ const tw = {
         Token: {
             Title: "API Key",
             SubTitle: "使用自己的 Key 可規避授權存取限制",
-            Placeholder: "OpenAI API Key"
+            Placeholder: "Qwen API Key"
         },
         Usage: {
             Title: "帳戶餘額",
@@ -4670,7 +4634,7 @@ const it = {
         Token: {
             Title: "API Key",
             SubTitle: "Utilizzare la chiave per ignorare il limite del codice di accesso",
-            Placeholder: "OpenAI API Key"
+            Placeholder: "Qwen API Key"
         },
         Usage: {
             Title: "Bilancio Account",
@@ -5613,7 +5577,7 @@ const vi = {
         Token: {
             Title: "API Key",
             SubTitle: "Sử dụng kh\xf3a của bạn để bỏ qua giới hạn m\xe3 truy cập",
-            Placeholder: "OpenAI API Key"
+            Placeholder: "Qwen API Key"
         },
         Usage: {
             Title: "Hạn mức t\xe0i khoản",
@@ -7346,7 +7310,7 @@ const CN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-3.5-turbo",
+            model: "qwen-turbo",
             temperature: 1,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -7371,7 +7335,7 @@ const CN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-3.5-turbo",
+            model: "qwen-turbo",
             temperature: 1,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -7396,7 +7360,7 @@ const CN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-3.5-turbo",
+            model: "qwen-turbo",
             temperature: 1,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -7421,7 +7385,7 @@ const CN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-3.5-turbo",
+            model: "qwen-turbo",
             temperature: 1,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -7446,7 +7410,7 @@ const CN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-3.5-turbo",
+            model: "qwen-turbo",
             temperature: 1,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -7471,7 +7435,7 @@ const CN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-3.5-turbo",
+            model: "qwen-turbo",
             temperature: 1,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -7496,7 +7460,7 @@ const CN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-3.5-turbo",
+            model: "qwen-turbo",
             temperature: 1,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -7521,7 +7485,7 @@ const CN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-3.5-turbo",
+            model: "qwen-turbo",
             temperature: 1,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -7552,7 +7516,7 @@ const CN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-3.5-turbo",
+            model: "qwen-turbo",
             temperature: 0.5,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -7577,7 +7541,7 @@ const CN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-3.5-turbo",
+            model: "qwen-turbo",
             temperature: 1,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -7608,7 +7572,7 @@ const CN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-3.5-turbo",
+            model: "qwen-turbo",
             temperature: 1,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -7639,7 +7603,7 @@ const CN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-3.5-turbo",
+            model: "qwen-turbo",
             temperature: 1,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -7694,7 +7658,7 @@ const CN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-3.5-turbo",
+            model: "qwen-turbo",
             temperature: 1,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -7725,7 +7689,7 @@ const CN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-4",
+            model: "qwen-turbo",
             temperature: 0.5,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -7754,7 +7718,7 @@ const EN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-4",
+            model: "qwen-turbo",
             temperature: 0.3,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -7797,7 +7761,7 @@ const EN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-4",
+            model: "qwen-turbo",
             temperature: 0.5,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -7822,7 +7786,7 @@ const EN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-3.5-turbo",
+            model: "qwen-turbo",
             temperature: 0.5,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -7853,7 +7817,7 @@ const EN_MASKS = [
             }
         ],
         modelConfig: {
-            model: "gpt-4",
+            model: "qwen-turbo",
             temperature: 0.5,
             max_tokens: 2000,
             presence_penalty: 0,
@@ -8733,7 +8697,7 @@ const useAccessStore = (0,esm/* create */.Ue)()((0,middleware/* persist */.tJ)((
         hideUserApiKey: false,
         hideBalanceQuery: false,
         disableGPT4: false,
-        uid: "",
+        uid: "\n",
         openaiUrl: DEFAULT_OPENAI_URL,
         enabledAccessControl () {
             get().fetch();
