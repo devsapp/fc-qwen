@@ -146,8 +146,8 @@ __webpack_require__.d(__webpack_exports__, {
 var jsx_runtime_ = __webpack_require__(56786);
 // EXTERNAL MODULE: ./app/components/button.tsx
 var components_button = __webpack_require__(69168);
-// EXTERNAL MODULE: ./app/components/error.tsx
-var error = __webpack_require__(22969);
+// EXTERNAL MODULE: ./app/components/error.tsx + 1 modules
+var error = __webpack_require__(22014);
 // EXTERNAL MODULE: ./app/components/mask.module.scss
 var mask_module = __webpack_require__(35390);
 var mask_module_default = /*#__PURE__*/__webpack_require__.n(mask_module);

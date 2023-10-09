@@ -31,8 +31,6 @@ var icons_close = __webpack_require__(26989);
 var copy = __webpack_require__(81482);
 // EXTERNAL MODULE: ./app/icons/clear.svg
 var clear = __webpack_require__(17382);
-// EXTERNAL MODULE: ./app/icons/three-dots.svg
-var three_dots = __webpack_require__(39866);
 // EXTERNAL MODULE: ./app/icons/edit.svg
 var edit = __webpack_require__(9127);
 // EXTERNAL MODULE: ./app/icons/eye.svg
@@ -49,15 +47,12 @@ var store = __webpack_require__(87079);
 var locales = __webpack_require__(70663);
 // EXTERNAL MODULE: ./app/utils.ts
 var utils = __webpack_require__(54289);
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__(11440);
-var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 // EXTERNAL MODULE: ./app/constant.ts
 var constant = __webpack_require__(14751);
 // EXTERNAL MODULE: ./app/store/prompt.ts
 var store_prompt = __webpack_require__(84143);
-// EXTERNAL MODULE: ./app/components/error.tsx
-var error = __webpack_require__(22969);
+// EXTERNAL MODULE: ./app/components/error.tsx + 1 modules
+var error = __webpack_require__(22014);
 // EXTERNAL MODULE: ./app/components/input-range.tsx
 var input_range = __webpack_require__(53937);
 // EXTERNAL MODULE: ./node_modules/react-router-dom/dist/umd/react-router-dom.production.min.js
@@ -132,8 +127,6 @@ const useSyncStore = (0,esm/* create */.Ue)()((0,middleware/* persist */.tJ)((se
 // EXTERNAL MODULE: ./node_modules/nanoid/index.js + 1 modules
 var nanoid = __webpack_require__(48350);
 ;// CONCATENATED MODULE: ./app/components/settings.tsx
-
-
 
 
 
@@ -521,20 +514,6 @@ function Settings() {
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx(ui_lib/* ListItem */.HC, {
-                                title: locales/* default */.ZP.Settings.Update.Version(currentVersion ?? "unknown"),
-                                subTitle: checkingUpdate ? locales/* default */.ZP.Settings.Update.IsChecking : hasNewVersion ? locales/* default */.ZP.Settings.Update.FoundUpdate(remoteId ?? "ERROR") : locales/* default */.ZP.Settings.Update.IsLatest,
-                                children: checkingUpdate ? /*#__PURE__*/ jsx_runtime_.jsx(three_dots/* default */.Z, {}) : hasNewVersion ? /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                    href: updateUrl,
-                                    target: "_blank",
-                                    className: "link",
-                                    children: locales/* default */.ZP.Settings.Update.GoToUpdate
-                                }) : /*#__PURE__*/ jsx_runtime_.jsx(components_button/* IconButton */.h, {
-                                    icon: /*#__PURE__*/ jsx_runtime_.jsx(reload/* default */.Z, {}),
-                                    text: locales/* default */.ZP.Settings.Update.CheckUpdate,
-                                    onClick: ()=>checkUpdate(true)
-                                })
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(ui_lib/* ListItem */.HC, {
                                 title: locales/* default */.ZP.Settings.SendKey,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx(ui_lib/* Select */.Ph, {
                                     value: config.submitKey,
@@ -558,19 +537,6 @@ function Settings() {
                                             value: v,
                                             children: v
                                         }, v))
-                                })
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(ui_lib/* ListItem */.HC, {
-                                title: locales/* default */.ZP.Settings.Lang.Name,
-                                children: /*#__PURE__*/ jsx_runtime_.jsx(ui_lib/* Select */.Ph, {
-                                    value: (0,locales/* getLang */.VQ)(),
-                                    onChange: (e)=>{
-                                        (0,locales/* changeLang */.t4)(e.target.value);
-                                    },
-                                    children: locales/* AllLangs */.DC.map((lang)=>/*#__PURE__*/ jsx_runtime_.jsx("option", {
-                                            value: lang,
-                                            children: locales/* ALL_LANG_OPTIONS */.nW[lang]
-                                        }, lang))
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx(ui_lib/* ListItem */.HC, {

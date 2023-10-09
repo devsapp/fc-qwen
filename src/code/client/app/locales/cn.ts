@@ -152,7 +152,7 @@ const cn = {
     },
     InjectSystemPrompts: {
       Title: "注入系统级提示信息",
-      SubTitle: "强制给每次请求的消息列表开头添加一个模拟 ChatGPT 的系统提示",
+      SubTitle: "强制给每次请求的消息列表开头添加一个模拟系统提示",
     },
     InputTemplate: {
       Title: "用户输入预处理",
@@ -217,7 +217,7 @@ const cn = {
     Token: {
       Title: "API Key",
       SubTitle: "使用自己的 Key 可绕过密码访问限制",
-      Placeholder: "Qwen API Key",
+      Placeholder: "ChatGPT API Key",
     },
 
     Usage: {

@@ -6,7 +6,7 @@ import { IconButton } from "./button";
 import SettingsIcon from "../icons/settings.svg";
 import GithubIcon from "../icons/github.svg";
 import ChatGptIcon from "../icons/chatgpt.svg";
-import QwenIcon from "../icons/qwen.svg";
+import ChatGPTIcon from "../icons/qwen.svg";
 import AddIcon from "../icons/add.svg";
 import CloseIcon from "../icons/close.svg";
 import MaskIcon from "../icons/mask.svg";
@@ -127,7 +127,7 @@ export function SideBar(props: { className?: string }) {
         <div className={styles["sidebar-logo"] + " no-dark"}>
           {/* <ChatGptIcon /> */}
           <img src="https://img.alicdn.com/imgextra/i4/O1CN01fbqryd1ZossCmdlga_!!6000000003242-54-tps-200-200.apng" style={{width:38,height:38}} alt="" />
-          {/* <QwenIcon style={{width:38,height:38}}/> */}
+          {/* <ChatGPTIcon style={{width:38,height:38}}/> */}
         </div>
       </div>
 
@@ -176,11 +176,11 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
           </div>
-          <div className={styles["sidebar-action"]}>
+          {/* <div className={styles["sidebar-action"]}>
             <a href={REPO_URL} target="_blank">
               <IconButton icon={<GithubIcon />} shadow />
             </a>
-          </div>
+          </div> */}
         </div>
         <div>
           <IconButton

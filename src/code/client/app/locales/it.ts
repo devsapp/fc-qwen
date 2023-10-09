@@ -128,7 +128,7 @@ const it: PartialLocaleType = {
       Title: "API Key",
       SubTitle:
         "Utilizzare la chiave per ignorare il limite del codice di accesso",
-      Placeholder: "Qwen API Key",
+      Placeholder: "ChatGPT API Key",
     },
     Usage: {
       Title: "Bilancio Account",

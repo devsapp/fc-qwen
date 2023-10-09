@@ -10,7 +10,7 @@ const en: LocaleType = {
   Error: {
     Unauthorized: isApp
       ? "Invalid API Key, please check it in [Settings](/#/settings) page."
-      : "Unauthorized access, please enter access code in [auth](/#/auth) page, or enter your Qwen API Key.",
+      : "Unauthorized access, please enter access code in [auth](/#/auth) page, or enter your ChatGPT API Key.",
   },
   Auth: {
     Title: "Need Access Code",
@@ -220,7 +220,7 @@ const en: LocaleType = {
     Token: {
       Title: "API Key",
       SubTitle: "Use your key to ignore access code limit",
-      Placeholder: "Qwen API Key",
+      Placeholder: "ChatGPT API Key",
     },
     Usage: {
       Title: "Account Balance",

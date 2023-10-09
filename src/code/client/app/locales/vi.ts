@@ -126,7 +126,7 @@ const vi: PartialLocaleType = {
     Token: {
       Title: "API Key",
       SubTitle: "Sử dụng khóa của bạn để bỏ qua giới hạn mã truy cập",
-      Placeholder: "Qwen API Key",
+      Placeholder: "ChatGPT API Key",
     },
     Usage: {
       Title: "Hạn mức tài khoản",
