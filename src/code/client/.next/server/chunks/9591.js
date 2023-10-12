@@ -15,8 +15,8 @@ exports.modules = {
 /* harmony export */   f: () => (/* binding */ drawText),
 /* harmony export */   g: () => (/* binding */ getNoteRect)
 /* harmony export */ });
-/* harmony import */ var _braintree_sanitize_url__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(46535);
-/* harmony import */ var _mermaid_768dc893_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(64221);
+/* harmony import */ var _braintree_sanitize_url__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6535);
+/* harmony import */ var _mermaid_768dc893_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4221);
 
 
 const drawRect = (element, rectData) => {

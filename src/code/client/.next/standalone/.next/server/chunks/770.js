@@ -2,7 +2,7 @@ exports.id = 770;
 exports.ids = [770];
 exports.modules = {
 
-/***/ 70770:
+/***/ 770:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15,56 +15,56 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 // EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(56786);
+var jsx_runtime_ = __webpack_require__(6786);
 // EXTERNAL MODULE: external "next/dist/compiled/react"
-var react_ = __webpack_require__(18038);
+var react_ = __webpack_require__(8038);
 // EXTERNAL MODULE: ./app/components/settings.module.scss
-var settings_module = __webpack_require__(44157);
+var settings_module = __webpack_require__(4157);
 var settings_module_default = /*#__PURE__*/__webpack_require__.n(settings_module);
 // EXTERNAL MODULE: ./app/icons/reload.svg
-var reload = __webpack_require__(30841);
+var reload = __webpack_require__(841);
 // EXTERNAL MODULE: ./app/icons/add.svg
-var add = __webpack_require__(32263);
+var add = __webpack_require__(2263);
 // EXTERNAL MODULE: ./app/icons/close.svg
-var icons_close = __webpack_require__(26989);
+var icons_close = __webpack_require__(6989);
 // EXTERNAL MODULE: ./app/icons/copy.svg
-var copy = __webpack_require__(81482);
+var copy = __webpack_require__(1482);
 // EXTERNAL MODULE: ./app/icons/clear.svg
-var clear = __webpack_require__(17382);
+var clear = __webpack_require__(7382);
 // EXTERNAL MODULE: ./app/icons/edit.svg
 var edit = __webpack_require__(9127);
 // EXTERNAL MODULE: ./app/icons/eye.svg
-var eye = __webpack_require__(32168);
+var eye = __webpack_require__(2168);
 // EXTERNAL MODULE: ./app/components/ui-lib.tsx + 3 modules
 var ui_lib = __webpack_require__(5129);
 // EXTERNAL MODULE: ./app/components/model-config.tsx
-var model_config = __webpack_require__(98581);
+var model_config = __webpack_require__(8581);
 // EXTERNAL MODULE: ./app/components/button.tsx
-var components_button = __webpack_require__(69168);
+var components_button = __webpack_require__(9168);
 // EXTERNAL MODULE: ./app/store/index.ts + 2 modules
-var store = __webpack_require__(87079);
+var store = __webpack_require__(7079);
 // EXTERNAL MODULE: ./app/locales/index.ts + 17 modules
-var locales = __webpack_require__(70663);
+var locales = __webpack_require__(663);
 // EXTERNAL MODULE: ./app/utils.ts
-var utils = __webpack_require__(54289);
+var utils = __webpack_require__(4289);
 // EXTERNAL MODULE: ./app/constant.ts
-var constant = __webpack_require__(14751);
+var constant = __webpack_require__(4751);
 // EXTERNAL MODULE: ./app/store/prompt.ts
-var store_prompt = __webpack_require__(84143);
+var store_prompt = __webpack_require__(4143);
 // EXTERNAL MODULE: ./app/components/error.tsx + 1 modules
-var error = __webpack_require__(22014);
+var error = __webpack_require__(2014);
 // EXTERNAL MODULE: ./app/components/input-range.tsx
-var input_range = __webpack_require__(53937);
+var input_range = __webpack_require__(3937);
 // EXTERNAL MODULE: ./node_modules/react-router-dom/dist/umd/react-router-dom.production.min.js
 var react_router_dom_production_min = __webpack_require__(5666);
-// EXTERNAL MODULE: ./app/components/emoji.tsx + 1 modules
-var emoji = __webpack_require__(6862);
+// EXTERNAL MODULE: ./app/components/emoji.tsx + 2 modules
+var emoji = __webpack_require__(6692);
 // EXTERNAL MODULE: ./app/config/client.ts + 2 modules
-var client = __webpack_require__(12730);
+var client = __webpack_require__(2730);
 // EXTERNAL MODULE: ./node_modules/zustand/esm/index.mjs + 1 modules
-var esm = __webpack_require__(99715);
+var esm = __webpack_require__(9715);
 // EXTERNAL MODULE: ./node_modules/zustand/esm/middleware.mjs
-var middleware = __webpack_require__(48228);
+var middleware = __webpack_require__(8228);
 ;// CONCATENATED MODULE: ./app/store/sync.ts
 
 
@@ -125,7 +125,7 @@ const useSyncStore = (0,esm/* create */.Ue)()((0,middleware/* persist */.tJ)((se
 }));
 
 // EXTERNAL MODULE: ./node_modules/nanoid/index.js + 1 modules
-var nanoid = __webpack_require__(48350);
+var nanoid = __webpack_require__(8350);
 ;// CONCATENATED MODULE: ./app/components/settings.tsx
 
 
@@ -655,7 +655,7 @@ function Settings() {
 
 /***/ }),
 
-/***/ 44157:
+/***/ 4157:
 /***/ ((module) => {
 
 // Exports

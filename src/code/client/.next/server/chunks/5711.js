@@ -2,7 +2,7 @@ exports.id = 5711;
 exports.ids = [5711];
 exports.modules = {
 
-/***/ 45711:
+/***/ 5711:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19,11 +19,11 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 // EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(56786);
+var jsx_runtime_ = __webpack_require__(6786);
 // EXTERNAL MODULE: ./node_modules/use-debounce/dist/index.module.js
 var index_module = __webpack_require__(2787);
 // EXTERNAL MODULE: external "next/dist/compiled/react"
-var react_ = __webpack_require__(18038);
+var react_ = __webpack_require__(8038);
 ;// CONCATENATED MODULE: ./app/icons/send-white.svg
 var _defs, _mask;
 function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -235,9 +235,9 @@ var SvgReturn = function SvgReturn(props) {
 };
 /* harmony default export */ const icons_return = (SvgReturn);
 // EXTERNAL MODULE: ./app/icons/copy.svg
-var copy = __webpack_require__(81482);
+var copy = __webpack_require__(1482);
 // EXTERNAL MODULE: ./app/icons/three-dots.svg
-var three_dots = __webpack_require__(39866);
+var three_dots = __webpack_require__(9866);
 ;// CONCATENATED MODULE: ./app/icons/prompt.svg
 var prompt_defs, prompt_mask;
 function prompt_extends() { prompt_extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return prompt_extends.apply(this, arguments); }
@@ -281,13 +281,13 @@ var SvgPrompt = function SvgPrompt(props) {
 };
 /* harmony default export */ const icons_prompt = (SvgPrompt);
 // EXTERNAL MODULE: ./app/icons/mask.svg
-var mask = __webpack_require__(38740);
+var mask = __webpack_require__(8740);
 // EXTERNAL MODULE: ./app/icons/max.svg
-var max = __webpack_require__(34423);
+var max = __webpack_require__(4423);
 // EXTERNAL MODULE: ./app/icons/min.svg
-var min = __webpack_require__(66363);
+var min = __webpack_require__(6363);
 // EXTERNAL MODULE: ./app/icons/reload.svg
-var reload = __webpack_require__(30841);
+var reload = __webpack_require__(841);
 ;// CONCATENATED MODULE: ./app/icons/break.svg
 var _g, break_defs;
 function break_extends() { break_extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return break_extends.apply(this, arguments); }
@@ -361,7 +361,7 @@ var SvgChatSettings = function SvgChatSettings(props) {
 };
 /* harmony default export */ const chat_settings = (SvgChatSettings);
 // EXTERNAL MODULE: ./app/icons/clear.svg
-var clear = __webpack_require__(17382);
+var clear = __webpack_require__(7382);
 ;// CONCATENATED MODULE: ./app/icons/pin.svg
 var pin_mask, pin_defs;
 function pin_extends() { pin_extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return pin_extends.apply(this, arguments); }
@@ -393,9 +393,9 @@ var SvgPin = function SvgPin(props) {
 };
 /* harmony default export */ const pin = (SvgPin);
 // EXTERNAL MODULE: ./app/icons/confirm.svg
-var icons_confirm = __webpack_require__(99992);
+var icons_confirm = __webpack_require__(9992);
 // EXTERNAL MODULE: ./app/icons/cancel.svg
-var cancel = __webpack_require__(85759);
+var cancel = __webpack_require__(5759);
 ;// CONCATENATED MODULE: ./app/icons/light.svg
 var light_defs, light_mask;
 function light_extends() { light_extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return light_extends.apply(this, arguments); }
@@ -663,50 +663,50 @@ var SvgPause = function SvgPause(props) {
 };
 /* harmony default export */ const pause = (SvgPause);
 // EXTERNAL MODULE: ./app/store/index.ts + 2 modules
-var store = __webpack_require__(87079);
+var store = __webpack_require__(7079);
 // EXTERNAL MODULE: ./app/utils.ts
-var utils = __webpack_require__(54289);
+var utils = __webpack_require__(4289);
 // EXTERNAL MODULE: ./node_modules/next/dist/shared/lib/app-dynamic.js
-var app_dynamic = __webpack_require__(47335);
+var app_dynamic = __webpack_require__(7335);
 var app_dynamic_default = /*#__PURE__*/__webpack_require__.n(app_dynamic);
 // EXTERNAL MODULE: ./app/client/controller.ts
-var controller = __webpack_require__(93935);
+var controller = __webpack_require__(3935);
 // EXTERNAL MODULE: ./app/store/prompt.ts
-var store_prompt = __webpack_require__(84143);
+var store_prompt = __webpack_require__(4143);
 // EXTERNAL MODULE: ./app/locales/index.ts + 17 modules
-var locales = __webpack_require__(70663);
+var locales = __webpack_require__(663);
 // EXTERNAL MODULE: ./app/components/button.tsx
-var components_button = __webpack_require__(69168);
+var components_button = __webpack_require__(9168);
 // EXTERNAL MODULE: ./app/components/chat.module.scss
-var chat_module = __webpack_require__(73071);
+var chat_module = __webpack_require__(3071);
 var chat_module_default = /*#__PURE__*/__webpack_require__.n(chat_module);
 // EXTERNAL MODULE: ./app/components/ui-lib.tsx + 3 modules
 var ui_lib = __webpack_require__(5129);
 // EXTERNAL MODULE: ./node_modules/react-router-dom/dist/umd/react-router-dom.production.min.js
 var react_router_dom_production_min = __webpack_require__(5666);
 // EXTERNAL MODULE: ./app/constant.ts
-var constant = __webpack_require__(14751);
-// EXTERNAL MODULE: ./app/components/emoji.tsx + 1 modules
-var emoji = __webpack_require__(6862);
+var constant = __webpack_require__(4751);
+// EXTERNAL MODULE: ./app/components/emoji.tsx + 2 modules
+var emoji = __webpack_require__(6692);
 // EXTERNAL MODULE: ./app/components/mask.tsx + 1 modules
-var components_mask = __webpack_require__(99510);
+var components_mask = __webpack_require__(9510);
 // EXTERNAL MODULE: ./app/store/mask.ts
-var store_mask = __webpack_require__(27736);
+var store_mask = __webpack_require__(7736);
 // EXTERNAL MODULE: ./app/command.ts
-var command = __webpack_require__(60170);
+var command = __webpack_require__(170);
 // EXTERNAL MODULE: ./app/utils/format.ts
-var format = __webpack_require__(21620);
+var format = __webpack_require__(1620);
 // EXTERNAL MODULE: ./app/components/exporter.module.scss
-var exporter_module = __webpack_require__(59701);
+var exporter_module = __webpack_require__(9701);
 var exporter_module_default = /*#__PURE__*/__webpack_require__.n(exporter_module);
 ;// CONCATENATED MODULE: ./app/icons/chatgpt.png
 /* harmony default export */ const chatgpt = ({"src":"/_next/static/media/chatgpt.1956a04f.png","height":153,"width":150,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAmklEQVR42iWPWwrCMBBFRxD8EXy/qtWWNi2i4jqlWVm6iWYnnpsETuZmcmcmsV+IBrMhTB3U8B3GqRxCXJkWYkHyA0c4ZVNUrGBrbD2J1odYoB08OF+JDTijHc64gU4VsPN51A2epg3uUPk8Zk83pyJ1k6FNc8fUtgSH4YKhh864WCNqqs9omQ/SxBf5uQxiSaKANzR6NKRf/gF6Ro+lykesCQAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 ;// CONCATENATED MODULE: ./app/icons/bot.png
 /* harmony default export */ const bot = ({"src":"/_next/static/media/bot.0c800005.png","height":120,"width":120,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAY1BMVEXo+f/m9/7m9/7l9/3l9v3W7PHU6vDN5uvL5Onr+//n+P/m9/7s+//r+//q+v/p+v/n+P+829682t662dy42Nu419q319q11tmz1dez1Nerz9Krz9GpztCoztCozs+ex8idx8jmiXbpAAAADHRSTlMXF76+vv39/f3+/v7UVO83AAAARElEQVR42gVAhxGAIAx86cUAChILlv2n9ACVgycxQZLmbopAsh+P0xFi2/v6VA9f76UfLWJ21+DXJohiNtYkMQnyISv8fgADftOSyBwAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
 // EXTERNAL MODULE: ./app/icons/download.svg
-var download = __webpack_require__(13262);
+var download = __webpack_require__(3262);
 // EXTERNAL MODULE: ./app/components/message-selector.module.scss
-var message_selector_module = __webpack_require__(58270);
+var message_selector_module = __webpack_require__(8270);
 var message_selector_module_default = /*#__PURE__*/__webpack_require__.n(message_selector_module);
 ;// CONCATENATED MODULE: ./app/components/message-selector.tsx
 
@@ -903,14 +903,14 @@ function MessageSelector(props) {
 }
 
 // EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(52451);
+var next_image = __webpack_require__(2451);
 var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
 // EXTERNAL MODULE: ./node_modules/html-to-image/lib/index.js
 var lib = __webpack_require__(5779);
 // EXTERNAL MODULE: ./app/client/api.ts + 1 modules
-var api = __webpack_require__(96083);
+var api = __webpack_require__(6083);
 // EXTERNAL MODULE: ./app/config/client.ts + 2 modules
-var client = __webpack_require__(12730);
+var client = __webpack_require__(2730);
 ;// CONCATENATED MODULE: ./app/components/exporter.tsx
 /* eslint-disable @next/next/no-img-element */ 
 
@@ -2522,7 +2522,7 @@ function Chat() {
 
 /***/ }),
 
-/***/ 59701:
+/***/ 9701:
 /***/ ((module) => {
 
 // Exports
@@ -2558,7 +2558,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 58270:
+/***/ 8270:
 /***/ ((module) => {
 
 // Exports

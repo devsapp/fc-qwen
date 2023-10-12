@@ -2,7 +2,7 @@ exports.id = 8973;
 exports.ids = [8973];
 exports.modules = {
 
-/***/ 28973:
+/***/ 8973:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15,17 +15,17 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 // EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(56786);
+var jsx_runtime_ = __webpack_require__(6786);
 // EXTERNAL MODULE: external "next/dist/compiled/react"
-var react_ = __webpack_require__(18038);
+var react_ = __webpack_require__(8038);
 // EXTERNAL MODULE: ./app/constant.ts
-var constant = __webpack_require__(14751);
+var constant = __webpack_require__(4751);
 // EXTERNAL MODULE: ./app/components/button.tsx
-var components_button = __webpack_require__(69168);
-// EXTERNAL MODULE: ./app/components/emoji.tsx + 1 modules
-var emoji = __webpack_require__(6862);
+var components_button = __webpack_require__(9168);
+// EXTERNAL MODULE: ./app/components/emoji.tsx + 2 modules
+var emoji = __webpack_require__(6692);
 // EXTERNAL MODULE: ./app/components/new-chat.module.scss
-var new_chat_module = __webpack_require__(36012);
+var new_chat_module = __webpack_require__(6012);
 var new_chat_module_default = /*#__PURE__*/__webpack_require__.n(new_chat_module);
 ;// CONCATENATED MODULE: ./app/icons/left.svg
 var _defs, _mask;
@@ -91,23 +91,23 @@ var SvgLightning = function SvgLightning(props) {
 };
 /* harmony default export */ const lightning = (SvgLightning);
 // EXTERNAL MODULE: ./app/icons/eye.svg
-var eye = __webpack_require__(32168);
+var eye = __webpack_require__(2168);
 // EXTERNAL MODULE: ./node_modules/react-router-dom/dist/umd/react-router-dom.production.min.js
 var react_router_dom_production_min = __webpack_require__(5666);
 // EXTERNAL MODULE: ./app/store/mask.ts
-var mask = __webpack_require__(27736);
+var mask = __webpack_require__(7736);
 // EXTERNAL MODULE: ./app/locales/index.ts + 17 modules
-var locales = __webpack_require__(70663);
+var locales = __webpack_require__(663);
 // EXTERNAL MODULE: ./app/store/index.ts + 2 modules
-var store = __webpack_require__(87079);
+var store = __webpack_require__(7079);
 // EXTERNAL MODULE: ./app/components/mask.tsx + 1 modules
-var components_mask = __webpack_require__(99510);
+var components_mask = __webpack_require__(9510);
 // EXTERNAL MODULE: ./app/command.ts
-var command = __webpack_require__(60170);
+var command = __webpack_require__(170);
 // EXTERNAL MODULE: ./app/components/ui-lib.tsx + 3 modules
 var ui_lib = __webpack_require__(5129);
 // EXTERNAL MODULE: ./app/masks/index.ts + 2 modules
-var app_masks = __webpack_require__(20918);
+var app_masks = __webpack_require__(918);
 ;// CONCATENATED MODULE: ./app/components/new-chat.tsx
 
 
@@ -303,7 +303,7 @@ function NewChat() {
 
 /***/ }),
 
-/***/ 36012:
+/***/ 6012:
 /***/ ((module) => {
 
 // Exports

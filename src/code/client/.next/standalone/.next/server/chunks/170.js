@@ -3,7 +3,7 @@ exports.id = 170;
 exports.ids = [170];
 exports.modules = {
 
-/***/ 60170:
+/***/ 170:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -11,11 +11,11 @@ exports.modules = {
 /* harmony export */   YZ: () => (/* binding */ useCommand),
 /* harmony export */   x6: () => (/* binding */ ChatCommandPrefix)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18038);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8038);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5666);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _locales__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(70663);
+/* harmony import */ var _locales__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(663);
 
 
 

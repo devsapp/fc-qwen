@@ -34,7 +34,7 @@ import { useAccessStore } from "../store";
 export function Loading(props: { noLogo?: boolean }) {
   return (
     <div className={styles["loading-content"] + " no-dark"}>
-      {!props.noLogo && <BotIcon />}
+      {/* {!props.noLogo && <BotIcon />} */}
       <LoadingIcon />
     </div>
   );

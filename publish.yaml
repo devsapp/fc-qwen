@@ -30,7 +30,7 @@ Parameters:
       title: 通义千问API-KEY
       type: string
       default: ""
-      description: 访问通义千问所需的KEY
+      description: 访问通义千问所需的KEY,申请地址:https://dashscope.console.aliyun.com/apiKey
     model:
       title: 通义千问模型
       type: string

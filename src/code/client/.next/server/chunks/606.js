@@ -3,7 +3,7 @@ exports.id = 606;
 exports.ids = [606];
 exports.modules = {
 
-/***/ 80606:
+/***/ 606:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -11,19 +11,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   ChatItem: () => (/* binding */ ChatItem),
 /* harmony export */   ChatList: () => (/* binding */ ChatList)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(56786);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _icons_delete_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12670);
-/* harmony import */ var _home_module_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(89641);
+/* harmony import */ var _icons_delete_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2670);
+/* harmony import */ var _home_module_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(9641);
 /* harmony import */ var _home_module_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_home_module_scss__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _hello_pangea_dnd__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(32470);
-/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(87079);
-/* harmony import */ var _locales__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(70663);
+/* harmony import */ var _hello_pangea_dnd__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(2126);
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7079);
+/* harmony import */ var _locales__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(663);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(5666);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _constant__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(14751);
-/* harmony import */ var _mask__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(99510);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(18038);
+/* harmony import */ var _constant__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(4751);
+/* harmony import */ var _mask__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9510);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8038);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _ui_lib__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(5129);
 
