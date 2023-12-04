@@ -1,11 +1,13 @@
-
-Type: Application
-Name: fc-qwen
+Edition: 3.0.0
+Type: Project
+Organization: 阿里云函数计算（FC）
+Effective: Public
+Name: agentcraft-fm-qwen-biz
+Description: 通义千问商业版本API服务
+HomePage: https://github.com/devsapp/agentcraft-fm-qwen-biz
 Provider:
   - 阿里云
-Version: 0.0.2
-Description: 部署通义千问客户端
-HomePage: https://github.com/devsapp/fc-qwen
+Version: 0.0.3
 Tags: #标签详情
   - 部署函数
 Category: Web框架
@@ -39,17 +41,6 @@ Parameters:
       enum:
         - qwen-turbo
         - qwen-plus
-    clientPassword:
-      title: 客户端的访问密码
-      type: password
-      default: 'fc-qwen'
-      description: 访问聊天客户端需要的密码默认是fc-qwen,您可以自行设置
-    serviceName:
-      title: 服务名
-      type: string
-      default: fc-qwen
-      pattern: "^[a-zA-Z_][a-zA-Z0-9-_:/.]{0,127}$"
-      description: 您可以根据需要设置不同的服务名，同一个服务会共享部分第三方云产品资源
     roleArn:
       title: RAM 角色 ARN
       type: string

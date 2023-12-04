@@ -1,5 +1,0 @@
-{
-  "/api/openai/[...path]/route": "app/api/openai/[...path]/route.js",
-  "/api/config/route": "app/api/config/route.js",
-  "/page": "app/page.js"
-}
